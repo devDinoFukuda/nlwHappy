@@ -1,0 +1,114 @@
+#page-landing {
+  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  /*comando abaixo dá a altura minima que queremos*/
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  /*align-items: center;*/
+  /*os dois comandos acima, colocam o conteúdo totalmente ao centro da página. somente em cima e embaixo.
+  para centralizar inclusive lateralmente, colocamos o margin:auto e excluindo o align-items: conforme abaixo ;
+  */
+}
+#container {
+  margin: auto;
+  /*112 rem = 1112px*/
+  width: min(90%, 112rem);
+}
+
+.location,
+h1,
+.visit p {
+  height: 16vh;
+}
+
+/*tempo de aparação de cada animação*/
+#logo {
+  animation-delay: 50ms;
+}
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  /*
+  clamp para ajuste da tela, ele pede 3 parâmetros. Param 1 é o minimo de ajuste, Param 2 é o ideal, ou seja, o que quero. Já o Param 3 é o máximo de tamanho que quero
+  */
+  font-size: clamp(4rem, 8vw, 8.4rem);
+  animation-delay: 150ms;
+}
+.visit p {
+  animation-delay: 200ms;
+}
+
+.visit a {
+  /*o comando acima, acessamos exclusivamente tag a dentro da class visit */
+  width: 8rem;
+  height: 8rem;
+  background: #ffd666;
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: background 200ms;
+  animation-delay: 250ms;
+}
+/*hover significa qdo o mouse estiver encima e efetuar uma alteração*/
+.visit a:hover {
+  background: #96feff;
+}
+
+/*
+desktop version, abaixo:
+as regras abaixo só irão começar a valer, quando a tela atingir o padrão informado em ()
+importante: é imprescindivel ter o meta chamado viewport no HTML, pois se não tiver, o @media não irá funcionar e teremos problemas de responsividade da tela
+*/
+
+@media (min-width: 760px) {
+  #container {
+    /*shorthand background: img repeat position/ size*/
+    background: url("../images/bg.svg") no-repeat 80% /
+      clamp(30rem, 54vw, 56rem);
+    padding: 5rem 2rem;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .location,
+  h1,
+  .visit p {
+    height: initial;
+    text-align: initial;
+  }
+  .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  main h1 {
+    font-weight: bold;
+    line-height: 0.88;
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+    width: min(300px, 80%);
+  }
+
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .visit p {
+    line-height: 1.5;
+    font-size: 2.4rem;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .visit a {
+    margin: initial;
+  }
+}

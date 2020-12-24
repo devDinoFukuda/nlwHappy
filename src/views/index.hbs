@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <!--esta meta abaixo, viewport, é reponsável pelo @media para responsividade no CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy</title>
+
+    <!--Comentários no HTML
+    OBS: Para deixar os códigos mais bem organizados, clico em ctrl + A e depois com botão direito do mouse clico em Format Document With e Prettier - Code para formatar e ajustar melhor os códigos
+    -->
+    <link rel="icon" href="/images/logo-icon.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/page-landing.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page-landing">
+      <div id="container">
+        <header>
+          <img
+          class="animate-up" 
+          id="logo" 
+          src="/images/logo.svg" 
+          alt="Logomarca de Happy" />
+          <!--imagens no formato svg são extremamente recomendados. Pois são bem ajustaveis pensando em reponsividade. Ademais, os mesmos são construidos em html.
+        comando alt é muito interessante para motores de busca na internet e visualização-->
+          <div class="location animate-up">
+            <!--duas classes dentro da div, através do espaço.-->
+            <!--podemos entender uma div como uma "caixa" dentro do html. Não tendo a necessidade dê um conteúdo especifico-->
+            <strong>Rio do Sul</strong>
+            <p>Santa Catarina</p>
+          </div>
+        </header>
+
+        <main>
+          <!--Main: geralmente o conteúdo principal da página-->
+          <h1 class="animate-up">Leve felicidade para o mundo</h1>
+          <section class="visit">
+            <p class="animate-up">Visite orfanatos e mude o dia de muitas crianças</p>
+            <a href="/orphanages" title="Visite orfanatos" class="animate-up">
+              <!--todas as tags html podemos incluir uma tag title-->
+              <img src="/images/arrow.svg" alt="Ir para o mapa" />
+            </a>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

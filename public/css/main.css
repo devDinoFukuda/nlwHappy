@@ -1,0 +1,52 @@
+/*
+cometários no CSS
+O conceito mais importante do CSS, é que ele trabalha em cascata. Ou seja, o uĺtimo comando altera. Mas podemos ajustar as mudanças  com especifidades. Isso se dá através de IDs e Class 
+o que é uma regra CSS:
+é composta por um seletor, por exemplo body do html colocando {} e dentro dela os ajustes que queremos efetuar
+ 
+*/
+
+/*o seletor # significa que estamos trabalhando dentro de uma ID do html, no caso o ID body*/
+
+/*Responsividade: Conceito Mobile First
+para isso utlizamos usualmente as unidade de medidas rem/em
+*/
+
+/*
+diferenças entre rem e em:
+rem: ele pega como referência o tamanho da fonte root, ou seja, do html.
+em: ele busca o tamanho da fonte do 'pai'. Por exemplo: o page-landing está dentro do body, portanto body é seu pai
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  background: #ebf2f5;
+}
+
+/*seletor universal, que será usado em toda página:*/
+:root {
+  /*o tamanho padrão dos navegadores é 16px = 1rem*/
+  font-size: 62.5%; 
+  /*forma mais usual para root. Ou seja, 62,5% de 16px é 10px*/
+}
+
+
+body, input, button, textarea {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+
+
