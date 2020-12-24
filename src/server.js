@@ -29,7 +29,7 @@ server
 
 // ativando/ ligando o servidor
 //NECESSÁRIO DESINSTALAR O PLUGIN DO VS CODE LIVE SERVER
-server.listen(5500)
+server.listen(process.env.PORT || 5500)
 
 //abrir o servidor via terminal: 
 //node src/server.js
