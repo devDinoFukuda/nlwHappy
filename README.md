@@ -15,13 +15,13 @@
 </p>
 <br><br>
 
-## 1. Deploy do Projeto: 
+## Deploy do Projeto: 
 
 ### Click:point_right: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deploy-nlw-happy.herokuapp.com/) 
 <br>
 <br>
 
-## 2. Tecnologias:
+## Tecnologias:
 <br>
 
 ### Linguagens:
@@ -55,7 +55,7 @@
 ![ubuntu](./badges/ubuntu.svg?raw=true)
 <br>
 
-## 3. Sobre NLW:
+## Sobre NLW:
 <p>
 Criado pela <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a>, Next Level Week é um evento com muito código, desafios, networking e um único objetivo, levar o aluno para o próximo nível, independente do nível atual.
 
@@ -71,7 +71,7 @@ Desenvolvemos a _Happy_, aplicação que oferece a descoberta de orfanatos próx
 
 <br>
 
-## 4. Como rodar o projeto: :fast_forward:
+## Como rodar o projeto: :fast_forward:
 
 >:small_blue_diamond: Clonar o projeto: <br> 
 git clone https://github.com/devDinoFukuda/nlwHappy.git <br> <br>
@@ -81,7 +81,7 @@ git clone https://github.com/devDinoFukuda/nlwHappy.git <br> <br>
 
 <br>
 
-## 5. Contatos:
+## Contatos:
 
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=link_do_seu_perfil_no_linkedin)](www.linkedin.com/in/devdinofukuda)
 [![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:seu_email)](mailto:dev.dinofukuda@gmail.com)
